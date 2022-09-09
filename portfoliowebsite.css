@@ -6,17 +6,14 @@
 body{
     display: flex;
     flex-direction: column;
-}
-
-main{ 
     margin: 0px auto;
-    max-width: 52em;
+    max-width: 55em;
 }
 
 header {
     display:flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 2em;
 }
 
@@ -35,6 +32,7 @@ nav a:hover {
     color: #909099;
 }
 
+
 #aboutme{
     display: flex;
     margin-bottom: 4em;
@@ -51,16 +49,92 @@ img.femalecoder {
     display: flex;
     flex-direction: column;
 }
+
+
+#projects {
+    margin-bottom: 3em;
+}
 #projecttitle {
     font-weight: bold;
     margin-bottom: 1em;
 }
 
-#logos{
-    display: flex;
+
+#skills {
+    margin-bottom: 3em;
 }
 
+#logos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0;
+}
 #logos li{
+    list-style:none;
+}
+
+#logos img{
     max-width: 4em;
+    padding: 0 1em;
     height: auto;
+}
+
+
+#contact {
+    margin-bottom: 3em;
+}
+#contactimages{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0;
+}
+#contactimages li{
+    list-style:none;
+    text-decoration: none;
+}
+
+#contactimages img{
+    max-width: 3em;
+    padding: 0 1em;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    nav li{
+        display: block;
+    }
+    header {
+        display: block;
+        text-align: center;
+    }
+    #aboutme {
+        display: block;
+    }
+    #info, #projects, #skills, #contact{
+        margin: 0 2em;
+    }
+    #logos {
+        flex-wrap: wrap;
+    }
+    #logos img{
+        padding: 1em 1em;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    
+    #aboutme {
+        display: block;
+    }
+    #info, #projects, #skills, #contact, header{
+        margin: 2em 2em;
+    }
+    #logos {
+        flex-wrap: wrap;
+    }
+    #logos img{
+        padding: 1em 1em;
+    }
 }
