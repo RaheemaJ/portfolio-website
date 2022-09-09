@@ -1,12 +1,69 @@
+<!--
+	add javascript for seconds
+	add accessibility
+	chnage for media types
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title></title>
+	<link href="portfoliowebsite.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+	<title>My Portfolio</title>
 </head>
 <body>
-	<header></header>
-	<nav></nav>
-	<main></main>
+	<header><h1>Raheema Jannah</h1>
+	<nav>
+		<ul role="complementary">
+			<li ><a href="#aboutme">About me</a></li>
+			<li ><a href="#projects">Projects</a></li>
+			<li ><a href="#skills">Skills</a></li>
+			<li ><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	</header>
+
+	<main>
+		<!--About me section-->
+		<section id="aboutme">
+			<span id="info">
+				<h2>About Me</h2>
+				<p>Hi, I'm Raheema. I'm currently studying Computer Science and Mathematics at the University of Leeds, due to graduate in 2024.</p>
+				<p>I have accumulated technical knowledge and skills through my course as well as the coding traineeship I am currently undertaking, which is an accredited training course to becoming a full stack developer.</p>
+				<p>In my free time I enjoy reading, painting and programming. I also enjoy solving complex problems and hope to develop as a graduate trainee is Data Analysis.</p>
+				<p>Fun Fact! I've been programming for <span id="getTime">0</span> seconds!</p>
+			</span>
+				<img src="/Images/female-coder.jpg" class="femalecoder" alt="female coder">
+		</section>
+
+		<!--Projects section-->
+		<section id="projects">
+			<h2>Projects</h2>
+			<details>
+				<summary id="projecttitle">Project Name</summary>
+				Project info
+			</details>
+		</section>
+
+		<!--skills section-->
+		<section id="#skills">
+			<h2>Skills</h2>
+			<ul id="logos">
+				<li><img href="/Images/html.png" alt="html5"></li>
+				<li><img href="/Images/css.png" alt="css3"></li>
+				<li><img href="/Images/javascript.png" alt="javascript"></li>
+				<li><img href="/Images/python.png" alt="python"></li>
+				<li><img href="/Images/c.png" alt="c"></li>
+				<li><img href="/Images/c#.png" alt="c#"></li>
+				<li><img href="/Images/java.png" alt="java"></li>
+				<li><img href="/Images/php.png" alt="php"></li>
+				<li><img href="/Images/r.jpeg" alt="r"></li>
+				<li><img href="/Images/sql.png" alt="sql"></li>
+			</ul>
+		</section>
+	</main>
 	<footer></footer>
 	
 

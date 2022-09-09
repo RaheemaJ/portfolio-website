@@ -1,0 +1,66 @@
+* {
+    font-family: 'Noto Serif', serif;
+    color: black;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{ 
+    margin: 0px auto;
+    max-width: 52em;
+}
+
+header {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+nav li {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5em;
+ 
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #909099;
+}
+
+#aboutme{
+    display: flex;
+    margin-bottom: 4em;
+}
+
+img.femalecoder {
+    max-width: 24em;
+    height: auto;
+    border-radius: 1em;
+    margin-left: 2em;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+}
+#projecttitle {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#logos{
+    display: flex;
+}
+
+#logos li{
+    max-width: 4em;
+    height: auto;
+}
